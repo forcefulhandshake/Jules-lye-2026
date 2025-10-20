@@ -6,19 +6,19 @@ import {
   faRoad,
   faPaperPlane,
   faPalette,
-  faGlassCheers,
+  faWineGlass,
   faCut,
   faTv,
   faCreditCard,
-  faMobileAndroidAlt,
+  faMobileAlt,
   faGem,
-  faRingsWedding,
-  faPaintBrushAlt,
+  faHeart,
+  faPaintBrush,
   faFish,
   faSpa,
   faBuilding,
-  faBiking
-} from '@fortawesome/pro-light-svg-icons';
+  faBicycle
+} from '@fortawesome/free-solid-svg-icons';
 import { Client } from '../data/clients';
 import ClientGallery from './ClientGallery';
 
@@ -45,18 +45,18 @@ const iconMap: { [key: string]: any } = {
   'fa-road': faRoad,
   'fa-paper-plane': faPaperPlane,
   'fa-palette': faPalette,
-  'fa-glass-cheers': faGlassCheers,
+  'fa-glass-cheers': faWineGlass,
   'fa-cut': faCut,
   'fa-tv-retro': faTv,
   'fa-credit-card': faCreditCard,
-  'fa-mobile-android-alt': faMobileAndroidAlt,
+  'fa-mobile-android-alt': faMobileAlt,
   'fa-gem': faGem,
-  'fa-rings-wedding': faRingsWedding,
-  'fa-paint-brush-alt': faPaintBrushAlt,
+  'fa-rings-wedding': faHeart,
+  'fa-paint-brush-alt': faPaintBrush,
   'fa-fish': faFish,
   'fa-spa': faSpa,
   'fa-building': faBuilding,
-  'fa-biking': faBiking
+  'fa-biking': faBicycle
 };
 
 /**

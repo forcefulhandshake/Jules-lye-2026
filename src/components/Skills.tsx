@@ -7,9 +7,9 @@ import {
   faPenFancy,
   faChartLine,
   faLightbulb,
-  faMobileAndroidAlt,
+  faMobileAlt,
   faDesktop
-} from '@fortawesome/pro-light-svg-icons';
+} from '@fortawesome/free-solid-svg-icons';
 
 /**
  * Skill interface defining the structure of skill data
@@ -49,7 +49,7 @@ const defaultSkills: Skill[] = [
   },
   {
     name: 'Responsive Design',
-    icon: faMobileAndroidAlt,
+    icon: faMobileAlt,
     level: 95,
     description: 'Mobile-first, cross-platform solutions'
   },
