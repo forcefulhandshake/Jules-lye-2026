@@ -1,0 +1,12 @@
+{
+  "git": {
+    "deploymentEnabled": {
+      "main": true,
+      "development": true
+    }
+  },
+  "buildCommand": "yarn build",
+  "outputDirectory": "build",
+  "installCommand": "yarn install"
+}
+

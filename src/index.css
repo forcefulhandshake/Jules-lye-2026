@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Blinking cursor animation */
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
+
+body {
+  font-family: 'franca', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #111827;
+    color: #fff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #fff;
+    color: #999;
+  }
+}
+
+/* Slick Carousel Custom Styles */
+.slick-slider {
+  position: relative;
+}
+
+.slick-dots {
+  position: static !important;
+  bottom: -25px;
+  list-style: none;
+  display: flex !important;
+  justify-content: left;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px !important;
+}
+
+.slick-dots li {
+  margin: 0 10px 0 0 !important;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50%;
+  border: none;
+  background: #cbd5e1 !important;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 0 4px;
+}
+
+.slick-dots li.slick-active button {
+  background: #0033ff !important;
+}
+
+.slick-dots li button:before {
+  display: none !important;
+}
+
+/* Loading state */
+body.load * {
+  transition: none !important;
+}
+
+/* Video styling */
+video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Gallery item styling */
+.gallery-item {
+  outline: none;
+}
+
+.image-container img,
+.video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}

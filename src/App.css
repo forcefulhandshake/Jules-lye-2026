@@ -1,0 +1,196 @@
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: red;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Consistent Width and Layout Styles */
+.App {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Client Accordion Styles */
+.client-accordion {
+  width: 100%;
+  max-width: 100%;
+}
+
+.client-accordion .wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+.client-accordion .item-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Workplace Gallery Styles */
+.workplace-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.gallery-item {
+  outline: none;
+}
+
+.studio-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.studio-image:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Ensure consistent spacing */
+.clients-list {
+  width: 100%;
+}
+
+.clients-list > div {
+  width: 100%;
+}
+
+/* Carousel navigation cursor areas */
+.cursor-carousel-prev,
+.cursor-carousel-next {
+  transition: opacity 0.2s ease;
+  z-index: 10;
+}
+
+.cursor-carousel-prev:active,
+.cursor-carousel-next:active {
+  opacity: 0.7;
+}
+
+/* Ensure the carousel container allows pointer events */
+.client-gallery .slick-slider,
+.client-gallery .slick-list,
+.client-gallery .slick-track {
+  position: relative;
+}
+
+/* Image loading shimmer effect */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.image-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e5e7eb;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.image-loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    transparent 100%
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@media (prefers-color-scheme: dark) {
+  .image-loading {
+    background-color: #282D3C;
+  }
+
+  .image-loading::after {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      /* rgba(0, 51, 255, 0.6) 50%, */
+      rgba(67, 71, 85, 0.6),
+      transparent 100%
+    );
+  }
+}
+
+@media (max-width: 768px) {
+  .workplace-gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Hide custom cursor navigation on mobile (use swipe instead) */
+  .cursor-carousel-prev,
+  .cursor-carousel-next {
+    display: none;
+  }
+
+  /* Hide carousel dots on mobile */
+  .client-gallery .slick-dots {
+    display: none !important;
+  }
+}
