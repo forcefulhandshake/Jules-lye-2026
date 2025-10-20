@@ -232,7 +232,7 @@ const Skills: React.FC<SkillsProps> = ({
           </div>
           <div className="stat-card">
             <div className="text-4xl md:text-6xl font-thin text-jules-primary dark:text-jules-primary-dark mb-2">
-              20+
+              10+
             </div>
             <div className="text-lg font-thin text-gray-600 dark:text-gray-400">
               Technologies Mastered
