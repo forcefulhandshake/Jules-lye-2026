@@ -4,7 +4,7 @@ import {
   faPalette,
   faCode,
   faUsers,
-  faPenFancy,
+  faShoppingCart,
   faChartLine,
   faLightbulb,
   faMobileAlt,
@@ -36,10 +36,10 @@ interface SkillsProps {
  */
 const defaultSkills: Skill[] = [
   {
-    name: 'UI/UX Design',
-    icon: faPalette,
-    level: 95,
-    description: 'Creating intuitive and beautiful user experiences'
+    name: 'Web Development',
+    icon: faDesktop,
+    level: 90,
+    description: 'Full-stack web application development'
   },
   {
     name: 'Front-End Development',
@@ -48,16 +48,22 @@ const defaultSkills: Skill[] = [
     description: 'React, TypeScript, modern web technologies'
   },
   {
+    name: 'Ecommerce',
+    icon: faShoppingCart,
+    level: 100,
+    description: 'Building and optimizing online stores and shopping experiences'
+  },
+  {
+    name: 'UI/UX Design',
+    icon: faPalette,
+    level: 95,
+    description: 'Creating intuitive and beautiful user experiences'
+  },
+  {
     name: 'Responsive Design',
     icon: faMobileAlt,
     level: 95,
     description: 'Mobile-first, cross-platform solutions'
-  },
-  {
-    name: 'Web Development',
-    icon: faDesktop,
-    level: 90,
-    description: 'Full-stack web application development'
   },
   {
     name: 'Creative Direction',
@@ -72,16 +78,10 @@ const defaultSkills: Skill[] = [
     description: 'Adobe Photoshop, XD, Illustrator, and Canva'
   },
   {
-    name: 'Content Strategy',
-    icon: faPenFancy,
-    level: 85,
-    description: 'Crafting compelling narratives and messaging'
-  },
-  {
     name: 'Analytics & Strategy',
     icon: faChartLine,
     level: 80,
-    description: 'Data-driven decision making'
+    description: 'Data-driven decision making and report analysis'
   }
 ];
 
