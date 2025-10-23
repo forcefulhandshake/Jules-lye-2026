@@ -82,7 +82,7 @@ const Intro: React.FC<IntroProps> = ({ onWorkplacesClick }) => {
       
       {/* Tagline */}
       <h1 className="text-2xl font-thin mb-8 leading-relaxed">
-        <span className="block text-gray-600 dark:text-gray-400">
+        <span className="block text-gray-400">
           Frontend Developer & Designer
         </span>
       </h1>

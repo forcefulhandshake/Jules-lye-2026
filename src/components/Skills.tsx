@@ -138,7 +138,7 @@ const Skills: React.FC<SkillsProps> = ({
             </span>
             {title}
           </h2>
-          <p className="text-lg md:text-2xl font-thin text-gray-500 dark:text-gray-400">
+          <p className="text-lg md:text-2xl font-thin text-gray-400">
             {subtitle}
           </p>
         </div>
@@ -161,18 +161,18 @@ const Skills: React.FC<SkillsProps> = ({
                 <span className="icon mr-2 -ml-14 mr-8">
                   <FontAwesomeIcon 
                     icon={skill.icon} 
-                    className={`text-gray-600 dark:text-gray-500 text-xl md:text-2xl transition-transform duration-300 
+                    className={`text-gray-400 text-xl md:text-2xl transition-transform duration-300 
                       ${hoveredSkill === skill.name ? 'scale-110' : 'scale-100'}`}
                   />
                 </span>
-                <h3 className="text-xl font-medium text-gray-900 dark:text-white">
+                <h3 className="text-xl font-medium text-white">
                   {skill.name}
                 </h3>
               </div>
 
               {/* Skill Description */}
               {skill.description && (
-                <p className="text-lg font-thin text-gray-600 dark:text-gray-400 mb-3 flex-grow">
+                <p className="text-lg font-thin text-gray-400 mb-3 flex-grow">
                   {skill.description}
                 </p>
               )}
@@ -188,7 +188,7 @@ const Skills: React.FC<SkillsProps> = ({
                       className={`w-2 h-2 rounded-full transition-all duration-500 ease-out
                         ${isFilled 
                           ? 'bg-jules-primary dark:bg-jules-primary-dark' 
-                          : 'bg-gray-200 dark:bg-gray-700'
+                          : 'bg-gray-700'
                         }
                         ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}
                       style={{
@@ -210,7 +210,7 @@ const Skills: React.FC<SkillsProps> = ({
             <div className="text-4xl md:text-6xl font-thin text-jules-primary dark:text-jules-primary-dark mb-2">
               12+
             </div>
-            <div className="text-lg font-thin text-gray-600 dark:text-gray-400">
+            <div className="text-lg font-thin text-gray-400">
               Years Experience
             </div>
           </div>
@@ -218,7 +218,7 @@ const Skills: React.FC<SkillsProps> = ({
             <div className="text-4xl md:text-6xl font-thin text-jules-primary dark:text-jules-primary-dark mb-2">
               50+
             </div>
-            <div className="text-lg font-thin text-gray-600 dark:text-gray-400">
+            <div className="text-lg font-thin text-gray-400">
               Projects Completed
             </div>
           </div>
@@ -226,7 +226,7 @@ const Skills: React.FC<SkillsProps> = ({
             <div className="text-4xl md:text-6xl font-thin text-jules-primary dark:text-jules-primary-dark mb-2">
               15+
             </div>
-            <div className="text-lg font-thin text-gray-600 dark:text-gray-400">
+            <div className="text-lg font-thin text-gray-400">
               Long Term Clients
             </div>
           </div>
@@ -234,7 +234,7 @@ const Skills: React.FC<SkillsProps> = ({
             <div className="text-4xl md:text-6xl font-thin text-jules-primary dark:text-jules-primary-dark mb-2">
               10+
             </div>
-            <div className="text-lg font-thin text-gray-600 dark:text-gray-400">
+            <div className="text-lg font-thin text-gray-400">
               Technologies Mastered
             </div>
           </div>

@@ -22,19 +22,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #111827;
-    color: #fff;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background-color: #fff;
-    color: #999;
-  }
+/* Consistent styling for both light and dark mode - matching dark mode */
+body {
+  background-color: #111827;
+  color: #fff;
 }
 
 /* Slick Carousel Custom Styles */

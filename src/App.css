@@ -135,7 +135,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #e5e7eb;
+  background-color: #282D3C;
   overflow: hidden;
   z-index: 1;
 }
@@ -150,27 +150,12 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(255, 255, 255, 0.6) 50%,
+    rgba(67, 71, 85, 0.6) 50%,
     transparent 100%
   );
   animation: shimmer 1.5s infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  .image-loading {
-    background-color: #282D3C;
-  }
-
-  .image-loading::after {
-    background: linear-gradient(
-      90deg,
-      transparent 0%,
-      /* rgba(0, 51, 255, 0.6) 50%, */
-      rgba(67, 71, 85, 0.6),
-      transparent 100%
-    );
-  }
-}
 
 @media (max-width: 768px) {
   .workplace-gallery {
