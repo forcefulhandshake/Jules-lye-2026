@@ -100,7 +100,7 @@ function App() {
   };
 
   return (
-    <div className="App min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+    <div className="App min-h-screen bg-gray-900 transition-colors duration-300">
       {/* Intro Section with wrapper */}
       {/* contact-section mt-16 text-left wrapper mx-auto px-20 py-40 max-w-[1600px] */}
       <div className="wrapper mx-auto px-20 pt-16 max-w-[1600px]">
@@ -120,7 +120,7 @@ function App() {
               </span>
               Selected Work.
             </h2>
-            <p className="text-lg md:text-2xl font-thin text-gray-500 dark:text-gray-400 mb-14">
+            <p className="text-lg md:text-2xl font-thin text-gray-400 mb-14">
               A showcase of projects and clients I've had the pleasure of working with over the years.
             </p>
           </div>
@@ -162,11 +162,11 @@ function App() {
           </span>
           Throughout my career I've also had the pleasure of working with
           <br /><br />
-          <span className="sub text-lg md:text-2xl text-gray-600 dark:text-gray-400 max-w-[1040px] inline-block">
+          <span className="sub text-lg md:text-2xl text-gray-400 max-w-[1040px] inline-block">
             ABC Television, Australian Cycling Road Safety, AusRAP, iRap, Kath & Kim, Lucy Folk, Mitchellake, Medibank, RACV, RACQ, Realestate.com.au, World Vision and many more amazing clients.
           </span>
         </h3>
-        <h3 className="text-lg md:text-2xl font-thin text-gray-600 dark:text-gray-400 max-w-[1600px] px-20 mx-auto">
+        <h3 className="text-lg md:text-2xl font-thin text-gray-400 max-w-[1600px] px-20 mx-auto">
           <span className="sub">Grateful for every collaboration.</span>
         </h3>
       </div>
@@ -202,12 +202,12 @@ function App() {
             linkedin.com/in/juleslye
           </a>
         </h3>
-        <h3 className="text-lg md:text-2xl font-thin text-gray-600 dark:text-gray-400 mb-2 mt-8">
+        <h3 className="text-lg md:text-2xl font-thin text-gray-400 mb-2 mt-8">
           <span className="sub">Brunswick, Melbourne</span>
           <br />
           <span className="sub">Victoria, Australia</span>
         </h3>
-        <h3 className="text-lg md:text-2xl font-thin text-gray-600 dark:text-gray-400 mt-8">
+        <h3 className="text-lg md:text-2xl font-thin text-gray-400 mt-8">
           <span className="sub">Available for freelance projects and full-time opportunities.</span>
         </h3>
       </div>

@@ -124,7 +124,7 @@ const WorkplaceAccordion: React.FC<WorkplaceAccordionProps> = ({ workplace, isOp
             </span>
             {workplace.title}
           </h2>
-          <p className="text-lg md:text-2xl font-thin text-gray-500 dark:text-gray-400 mb-14">
+          <p className="text-lg md:text-2xl font-thin text-gray-400 mb-14">
             {workplace.subtitle}
           </p>
         </div>
@@ -138,25 +138,25 @@ const WorkplaceAccordion: React.FC<WorkplaceAccordionProps> = ({ workplace, isOp
               <h3 className="text-xl md:text-2xl font-medium text-jules-primary dark:text-jules-primary-dark">
                 Frontend Web Developer & Designer
               </h3>
-              <span className="text-sm md:text-lg font-thin text-gray-500 dark:text-gray-400">
+              <span className="text-sm md:text-lg font-thin text-gray-400">
                 2013 - Present
               </span>
             </div>
-            <h4 className="text-lg md:text-2xl font-thin text-gray-700 dark:text-gray-300 mb-4">
+            <h4 className="text-lg md:text-2xl font-thin text-gray-300 mb-4">
               Involved Ltd | Creative Digital Agency
             </h4>
-            <p className="text-lg md:text-2xl font-thin text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+            <p className="text-lg md:text-2xl font-thin text-gray-400 mb-4 leading-relaxed">
               Collingwood, Melbourne | <a href="https://involved.com.au" target="_blank" rel="noopener noreferrer" className="underline hover:text-jules-accent dark:hover:text-jules-accent-dark transition-colors">involved.com.au</a>
             </p>
-            <p className="text-lg md:text-2xl font-thin text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+            <p className="text-lg md:text-2xl font-thin text-gray-300 mb-4 leading-relaxed">
               <strong className="font-medium">Select clients:</strong> Accor, ANCAP, Gristmill Productions, Pieces of Eight, The Holistic Ingredient, Outré Gallery
             </p>
-            <p className="text-lg md:text-2xl font-thin text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="text-lg md:text-2xl font-thin text-gray-300 leading-relaxed">
               For over 12 years I have been a key part of Involved, a boutique digital agency in Collingwood, Melbourne. 
               As an experienced Frontend Developer and Designer, my role has spanned multiple areas of the business, from frontend 
               development and UI/UX design, to branding, SEO data strategies, campaign work and client management.
             </p>
-            <p className="text-lg md:text-2xl font-thin text-gray-700 dark:text-gray-300 mt-4 leading-relaxed">
+            <p className="text-lg md:text-2xl font-thin text-gray-300 mt-4 leading-relaxed">
               I have had the opportunity to work with major clients such as Accor, ANCAP Car Safety and Gristmill. 
               I've also worked on various ecommerce brands, corporate websites, creative projects for film and media 
               clients and not-for-profit organisations. Standout projects include leading the development of The Holistic 
@@ -168,14 +168,14 @@ const WorkplaceAccordion: React.FC<WorkplaceAccordionProps> = ({ workplace, isOp
           {/* View More Button */}
           <button
             onClick={onToggle}
-            className="px-4 py-2 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-full text-sm font-thin transition-colors mb-8"
+            className="px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-full text-sm font-thin transition-colors mb-8"
           >
             {isOpen ? 'View Less' : 'View More Experience'}
           </button>
 
           {/* Additional Experience - Collapsible */}
           {isOpen && (
-            <div className="additional-experience pt-8 border-t border-gray-300 dark:border-gray-700">
+            <div className="additional-experience pt-8 border-t border-gray-700">
 
               {/* Yoobee - Diploma Tutor */}
               <div className="experience-item mb-12">
@@ -183,17 +183,17 @@ const WorkplaceAccordion: React.FC<WorkplaceAccordionProps> = ({ workplace, isOp
                     <h3 className="text-xl md:text-2xl font-medium text-jules-primary dark:text-jules-primary-dark">
                       Web Development Diploma Tutor
                     </h3>
-                    <span className="text-sm md:text-lg font-thin text-gray-500 dark:text-gray-400">
+                    <span className="text-sm md:text-lg font-thin text-gray-400">
                       2012 - 2013
                     </span>
                   </div>
-                  <h4 className="text-lg md:text-2xl font-thin text-gray-700 dark:text-gray-300 mb-4">
+                  <h4 className="text-lg md:text-2xl font-thin text-gray-300 mb-4">
                     Yoobee Technology and Design
                   </h4>
-                  <p className="text-lg md:text-2xl font-thin text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                  <p className="text-lg md:text-2xl font-thin text-gray-400 mb-4 leading-relaxed">
                     Wellington, New Zealand
                   </p>
-                  <p className="text-lg md:text-2xl font-thin text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="text-lg md:text-2xl font-thin text-gray-300 leading-relaxed">
                     Marked assignments for the one-year Web Diploma, troubleshooting and testing student work. I provided 
                     feedback on more efficient approaches, which deepened my understanding of HTML, CSS, PHP, and MySQL. 
                     I also developed strong time management skills by helping students plan their projects and occasionally 
@@ -207,17 +207,17 @@ const WorkplaceAccordion: React.FC<WorkplaceAccordionProps> = ({ workplace, isOp
                     <h3 className="text-xl md:text-2xl font-medium text-jules-primary dark:text-jules-primary-dark">
                       Web Development Short Course Tutor
                     </h3>
-                    <span className="text-sm md:text-lg font-thin text-gray-500 dark:text-gray-400">
+                    <span className="text-sm md:text-lg font-thin text-gray-400">
                       2012 - 2013
                     </span>
                   </div>
-                  <h4 className="text-lg md:text-2xl font-thin text-gray-700 dark:text-gray-300 mb-4">
+                  <h4 className="text-lg md:text-2xl font-thin text-gray-300 mb-4">
                     Yoobee Technology and Design
                   </h4>
-                  <p className="text-lg md:text-2xl font-thin text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                  <p className="text-lg md:text-2xl font-thin text-gray-400 mb-4 leading-relaxed">
                     Wellington, New Zealand
                   </p>
-                  <p className="text-lg md:text-2xl font-thin text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="text-lg md:text-2xl font-thin text-gray-300 leading-relaxed">
                     Designed and delivered two-day courses in HTML & CSS or PHP & MySQL. This experience helped me solidify 
                     my understanding of the core concepts and best practices of these languages. I taught classes of up to 
                     ten students, mostly IT and corporate professionals looking to upskill.
@@ -225,33 +225,33 @@ const WorkplaceAccordion: React.FC<WorkplaceAccordionProps> = ({ workplace, isOp
                 </div>
 
               {/* Education */}
-              <div className="education-section mt-16 pt-8 border-t border-gray-300 dark:border-gray-700">
+              <div className="education-section mt-16 pt-8 border-t border-gray-700">
                   <h3 className="text-2xl md:text-3xl font-medium text-jules-primary dark:text-jules-primary-dark mb-8">
                     Education
                   </h3>
                   
                 <div className="education-item mb-8">
                     <div className="flex flex-col md:flex-row md:items-baseline md:justify-between mb-4">
-                      <h4 className="text-xl font-medium text-gray-900 dark:text-white">
+                      <h4 className="text-xl font-medium text-white">
                         Diploma in Web Development and Design
                       </h4>
-                      <span className="text-sm md:text-lg font-thin text-gray-500 dark:text-gray-400">
+                      <span className="text-sm md:text-lg font-thin text-gray-400">
                         2010 - 2012
                       </span>
                     </div>
-                    <p className="text-lg md:text-2xl font-thin text-gray-700 dark:text-gray-300 mb-2">
+                    <p className="text-lg md:text-2xl font-thin text-gray-300 mb-2">
                       Yoobee Technology and Design | Wellington, New Zealand
                     </p>
-                    <p className="text-lg md:text-2xl font-thin text-gray-600 dark:text-gray-400 leading-relaxed">
+                    <p className="text-lg md:text-2xl font-thin text-gray-400 leading-relaxed">
                       Awarded the <strong className="font-medium">Webco Interactive Excellence Award</strong> – a national award judged by industry specialists.
                     </p>
                       </div>
 
                 <div className="education-item">
-                  <h4 className="text-xl font-medium text-gray-900 dark:text-white mb-4">
+                  <h4 className="text-xl font-medium text-white mb-4">
                     Certificate in Web and Graphic Design
                   </h4>
-                    <p className="text-lg md:text-2xl font-thin text-gray-700 dark:text-gray-300">
+                    <p className="text-lg md:text-2xl font-thin text-gray-300">
                     Yoobee Technology and Design | Wellington, New Zealand
                   </p>
                       </div>

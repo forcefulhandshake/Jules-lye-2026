@@ -142,19 +142,19 @@ const ClientAccordion: React.FC<ClientAccordionProps> = ({
       }`}
     >
       <div className="wrapper mx-auto">
-        <div className={`item-container w-full transition-colors duration-300 ${
-              isOpen ? 'bg-gray-100 dark:bg-gray-800' : 'hover:bg-gray-50 dark:hover:bg-gray-800'
+        <div             className={`item-container w-full transition-colors duration-300 ${
+              isOpen ? 'bg-gray-800' : 'hover:bg-gray-800'
             }`}>
           {/* Accordion Trigger Button */}
           <button 
-            className={`js-accordion-trigger w-full text-left py-4 transition-colors border-t border-gray-200 dark:border-gray-700`}
+            className={`js-accordion-trigger w-full text-left py-4 transition-colors border-t border-gray-700`}
             onClick={onToggle}
           >
             <div className="list flex items-center justify-between max-w-[1600px] px-20 py-2 mx-auto">
               {/* Client Info (Icon + Name) */}
               <div className="flex items-center">
                 <span className="icon">
-                  <FontAwesomeIcon icon={icon} className="text-gray-600 text-xl md:text-2xl -ml-14" />
+                  <FontAwesomeIcon icon={icon} className="text-gray-400 text-xl md:text-2xl -ml-14" />
                 </span>
                 <span className="client-name font-thin text-xl md:text-2xl ml-0">{client.name}</span>
               </div>
@@ -170,7 +170,7 @@ const ClientAccordion: React.FC<ClientAccordionProps> = ({
                           e.stopPropagation();
                           onPrev();
                         }}
-                        className="hidden md:inline-block px-4 py-2 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-full text-sm font-thin transition-colors"
+                        className="hidden md:inline-block px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-full text-sm font-thin transition-colors"
                       >
                         Previous Client
                       </button>
@@ -182,7 +182,7 @@ const ClientAccordion: React.FC<ClientAccordionProps> = ({
                           e.stopPropagation();
                           onNext();
                         }}
-                        className="hidden md:inline-block px-4 py-2 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-full text-sm font-thin transition-colors"
+                        className="hidden md:inline-block px-4 py-2 bg-gray-700 hover:bg-gray-600 text-gray-300 rounded-full text-sm font-thin transition-colors"
                       >
                         Next Client
                       </button>
@@ -208,7 +208,7 @@ const ClientAccordion: React.FC<ClientAccordionProps> = ({
             <div className="client-info py-4 max-w-[1600px] px-0 md:px-20 mx-auto">
               {/* Client Description */}
               <div className="client-intro mb-6 text-left max-w-[1000px]">
-                <p className="text-gray-700 dark:text-white leading-relaxed text-lg md:text-2xl font-thin px-6 md:px-0">
+                <p className="text-white leading-relaxed text-lg md:text-2xl font-thin px-6 md:px-0">
                   {client.description}
                   {/* Website link if available */}
                   {client.website && (
@@ -228,7 +228,7 @@ const ClientAccordion: React.FC<ClientAccordionProps> = ({
                 
                 {/* Credit information if available */}
                 {client.credit && (
-                  <p className="text-lg md:text-2xl font-thin text-gray-500 mt-2 px-6 md:px-0">
+                  <p className="text-lg md:text-2xl font-thin text-gray-400 mt-2 px-6 md:px-0">
                     {client.credit}
                   </p>
                 )}
